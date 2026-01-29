@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <header>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name ="description" content="JUBA HOMEZ is a real estate company based in Juba, South Sudan, specializing in residential and commercial properties.">
+        <meta name="author" content="MOGGA ENOCH">
+        <link rel="icon" type="image/x-icon" href="../assets/pictures/gemini_generated_image_yvrl7oyvrl7oyvrl.png">
+        <link rel="stylesheet" href="../assets/css/general-styling.css">
+        <script src="../assets/js/juba-homez.js" defer></script>
+    </header>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="../assets/pictures/gemini_generated_image_yvrl7oyvrl7oyvrl.png" alt="JUBA HOMEZ Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../Juba-Homez-/Index.html">Home</a></li>
+                    <li><a href="../Juba-Homez-/About.html">About Us</a></li>
+                    <li><a href="../Juba-Homez-/Properties.html">Properties</a></li>
+                    <li><a href="../Juba-Homez-/Contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="search-section">
+                <h1>Search Properties</h1>
+                <p>Use the search functionality below to find properties that match your criteria. You can filter by location, property type, price range, and more.</p>
+
+                <form action="#" method="get" class="search-form">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" placeholder="Enter location">
+
+                    <label for="property-type">Property Type:</label>
+                    <select id="property-type" name="property-type">
+                        <option value="">Select Type</option>
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="land">Land</option>
+                        
+                    </select>
+
+                    <label for="price-range">Price Range:</label>
+                    <input type="text" id="price-range" name="price-range" placeholder="Enter price range">
+
+                    <button type="submit">Search</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

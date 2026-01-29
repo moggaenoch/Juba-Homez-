@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JUBA HOMEZ - Real Estate in Juba, South Sudan">
+    <meta name="author" content="MOGGA ENOCH">
+    <link rel="icon" type="image/x-icon" href="../pictures/Gemini_Generated_Image_yvrl7oyvrl7oyvrl.png">
+    <title>JUBA HOMEZ</title>
+    
+    <style>
+        /* BASIC CSS STYLING */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #5D9CEC; /* Light Blue Base */
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo styling inside Nav */
+        .nav-logo {
+            height: 50px; /* Controlled size */
+            width: auto;
+        }
+
+        /* Main Sections */
+        section {
+            padding: 2rem;
+            min-height: 80vh; /* Takes up most of the screen */
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Form Styling */
+        .search-bar {
+            margin-top: 10px;
+        }
+        .search-bar input {
+            padding: 5px;
+            border-radius: 4px;
+            border: none;
+        }
+        .search-bar button {
+            padding: 5px 10px;
+            background-color: #4A89DC;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Responsive Images */
+        img.responsive {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Section Specifics */
+        #home { background-color: #f4f4f4; }
+        #services { background-color: #ffffff; }
+        #contact { background-color: #e8efff; }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <h1>JUBA HOMEZ</h1>
+            <form class="search-bar">
+                <input type="text" placeholder="Search location...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        
+        <nav>
+            <ul>
+                               
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#buy">BUY</a></li>
+                <li><a href="#rent">RENT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#areas">AREAS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Juba Homez</h2>
+            <p>Your trusted partner for residential and commercial properties in South Sudan.</p>
+            <img src="../pictures/Gemini_Generated_Image_yvrl7oyvrl7oyvrl.png" alt="Featured Home" class="responsive" style="max-height: 400px; object-fit: cover;">
+        </section>
+
+        <section id="services">
+            <h1>Our Services</h1>
+            <ul>
+                <li>Property Sales</li>
+                <li>Property Rentals</li>
+                <li>Property Management</li>
+                <li>Real Estate Consulting</li>
+            </ul>
+        </section>
+
+        <section id="areas" class="areas-covered">
+            <h1>Areas We Cover</h1>
+            <ul>
+                <li>Hai Amarat</li>
+                <li>Kator</li>
+                <li>Munuki</li>
+                <li>Gudele</li>
+                </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@jubahomez.com</p>
+            <p>Phone: +211 921 777 490</p>
+            <p>Address: Juba, South Sudan</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 JUBA HOMEZ. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

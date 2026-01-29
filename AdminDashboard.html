@@ -1,0 +1,761 @@
+<!-- =========================
+REAL ESTATE APP: HTML SKELETON PAGES (NO CSS)
+Copy each section into its own .html file.
+========================= -->
+
+
+<!-- =========================
+1) index.html (Public)
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Real Estate App - Home</title>
+</head>
+<body>
+  <header>
+    <h1>Real Estate Web App</h1>
+    <nav aria-label="Primary">
+      <a href="index.html">Home</a> |
+      <a href="search.html">Search</a> |
+      <a href="agents.html">Brokers</a> |
+      <a href="photographers.html">Photographers</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="auth-login.html">Login</a> |
+      <a href="auth-register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="hero">
+      <h2 id="hero">Find a home faster</h2>
+      <p>Search listings, save favorites, and schedule viewings.</p>
+      <p><a href="search.html">Go to Search</a></p>
+    </section>
+
+    <section aria-labelledby="featured">
+      <h2 id="featured">Featured listings</h2>
+      <ul>
+        <li><a href="listing.html?id=101">Listing 101 — 3 Bed House</a></li>
+        <li><a href="listing.html?id=102">Listing 102 — 2 Bed Apartment</a></li>
+        <li><a href="listing.html?id=103">Listing 103 — Land Plot</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <nav aria-label="Legal">
+      <a href="terms.html">Terms</a> |
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <p>&copy; 2026 Real Estate App</p>
+  </footer>
+</body>
+</html>
+
+
+<!-- =========================
+2) app-shell-template.html (Reusable layout idea)
+Use this structure for all dashboards.
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>App - Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>LOGO</h1>
+
+    <form action="#" method="get" aria-label="Global search">
+      <label for="q">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search listings/users..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <nav aria-label="Top actions">
+      <a href="notifications.html">🔔 Notifications</a> |
+      <a href="messages-inbox.html">💬 Messages</a> |
+      <a href="profile.html">👤 Profile</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <div>
+    <aside aria-label="Sidebar">
+      <nav aria-label="Dashboard navigation">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="messages-inbox.html">Messages</a></li>
+          <li><a href="notifications.html">Notifications</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <h2>PAGE TITLE</h2>
+        <p>Optional subtitle / breadcrumbs</p>
+      </header>
+
+      <section aria-label="KPI summary">
+        <h3>Key metrics</h3>
+        <ul>
+          <li>KPI Card 1</li>
+          <li>KPI Card 2</li>
+          <li>KPI Card 3</li>
+        </ul>
+      </section>
+
+      <section aria-label="Main content">
+        <h3>Content</h3>
+        <p>Tables, lists, and forms go here.</p>
+      </section>
+    </main>
+  </div>
+
+  <hr />
+  <footer>
+    <p>&copy; 2026 Real Estate App</p>
+  </footer>
+</body>
+</html>
+
+
+<!-- =========================
+3) admin-dashboard.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+
+    <form action="#" method="get" aria-label="Global search">
+      <label for="admin-q">Search</label>
+      <input id="admin-q" name="q" type="search" placeholder="Listings, users, payments..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <nav aria-label="Top actions">
+      <a href="admin-listings-new.html">+ Add Listing</a> |
+      <a href="notifications.html">🔔</a> |
+      <a href="messages-inbox.html">💬</a> |
+      <a href="profile.html">👤</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <div>
+    <aside>
+      <nav aria-label="Admin navigation">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="admin-dashboard.html">Overview</a></li>
+          <li><a href="admin-listings.html">Listings</a>
+            <ul>
+              <li><a href="admin-listings-pending.html">Pending Approval</a></li>
+              <li><a href="admin-listings.html">All Listings</a></li>
+              <li><a href="admin-listings-featured.html">Featured</a></li>
+            </ul>
+          </li>
+          <li><a href="admin-users.html">Users & Roles</a></li>
+          <li><a href="admin-verification.html">Verification</a></li>
+          <li><a href="admin-leads.html">Leads</a></li>
+          <li><a href="admin-payments.html">Payments</a></li>
+          <li><a href="admin-content.html">Content & Marketing</a></li>
+          <li><a href="admin-moderation.html">Moderation</a></li>
+          <li><a href="admin-analytics.html">Analytics</a></li>
+          <li><a href="admin-system.html">System</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Dashboard</h2>
+
+      <section aria-label="Admin KPIs">
+        <h3>KPIs</h3>
+        <ul>
+          <li>Active listings: <strong>—</strong></li>
+          <li>Pending approvals: <strong>—</strong></li>
+          <li>New users (7d): <strong>—</strong></li>
+          <li>Revenue (30d): <strong>—</strong></li>
+        </ul>
+      </section>
+
+      <section aria-label="Pending approvals">
+        <h3>Pending Approvals</h3>
+        <table border="1" cellpadding="6">
+          <thead>
+            <tr>
+              <th>Listing</th>
+              <th>Submitted by</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="admin-listing-detail.html?id=501">Listing #501</a></td>
+              <td>Owner/Broker Name</td>
+              <td>—</td>
+              <td>
+                <a href="#">Review</a> |
+                <a href="#">Approve</a> |
+                <a href="#">Reject</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-label="Reports and flags">
+        <h3>Reports / Flags</h3>
+        <ul>
+          <li>Spam report: Listing #— <a href="#">Open</a></li>
+          <li>Fraud report: User #— <a href="#">Open</a></li>
+        </ul>
+      </section>
+
+      <section aria-label="Recent activity">
+        <h3>Recent Activity</h3>
+        <ul>
+          <li>User verified: —</li>
+          <li>Listing edited: —</li>
+          <li>Payment received: —</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+<!-- =========================
+4) customer-dashboard.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Customer Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Customer Dashboard</h1>
+
+    <form action="search.html" method="get" aria-label="Search listings">
+      <label for="cust-q">Search</label>
+      <input id="cust-q" name="q" type="search" placeholder="Location, price, bedrooms..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <nav aria-label="Top actions">
+      <a href="notifications.html">🔔</a> |
+      <a href="messages-inbox.html">💬</a> |
+      <a href="profile.html">👤</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <div>
+    <aside>
+      <nav aria-label="Customer navigation">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="customer-dashboard.html">Home</a></li>
+          <li><a href="customer-favorites.html">Favorites</a></li>
+          <li><a href="customer-saved-searches.html">Saved Searches & Alerts</a></li>
+          <li><a href="customer-inquiries.html">My Inquiries</a></li>
+          <li><a href="customer-viewings.html">Viewing Requests</a></li>
+          <li><a href="customer-compare.html">Compare</a></li>
+          <li><a href="customer-documents.html">Documents (Optional)</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Welcome back, Customer</h2>
+
+      <section aria-label="Recommended listings">
+        <h3>Recommended for you</h3>
+        <ul>
+          <li><a href="listing.html?id=201">Listing #201 — Apartment</a></li>
+          <li><a href="listing.html?id=202">Listing #202 — House</a></li>
+          <li><a href="listing.html?id=203">Listing #203 — Land</a></li>
+        </ul>
+      </section>
+
+      <section aria-label="Alerts">
+        <h3>Alerts</h3>
+        <ul>
+          <li>Price drop: Listing #—</li>
+          <li>New listings in your area: —</li>
+        </ul>
+      </section>
+
+      <section aria-label="Recently viewed">
+        <h3>Recently viewed</h3>
+        <ol>
+          <li><a href="listing.html?id=101">Listing #101</a></li>
+          <li><a href="listing.html?id=102">Listing #102</a></li>
+          <li><a href="listing.html?id=103">Listing #103</a></li>
+        </ol>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+<!-- =========================
+5) broker-dashboard.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Broker Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Broker Dashboard</h1>
+
+    <nav aria-label="Top actions">
+      <a href="broker-listings-new.html">+ Add Listing</a> |
+      <a href="notifications.html">🔔</a> |
+      <a href="messages-inbox.html">💬</a> |
+      <a href="profile.html">👤</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <div>
+    <aside>
+      <nav aria-label="Broker navigation">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="broker-dashboard.html">Overview</a></li>
+          <li><a href="broker-listings.html">My Listings</a></li>
+          <li><a href="broker-leads.html">Leads</a>
+            <ul>
+              <li><a href="broker-leads-inbox.html">Inbox</a></li>
+              <li><a href="broker-leads-pipeline.html">Pipeline</a></li>
+            </ul>
+          </li>
+          <li><a href="broker-clients.html">Clients</a></li>
+          <li><a href="broker-viewings-calendar.html">Viewings (Calendar)</a></li>
+          <li><a href="broker-deals.html">Deals</a></li>
+          <li><a href="broker-commissions.html">Commissions</a></li>
+          <li><a href="broker-verification.html">Verification</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Overview</h2>
+
+      <section aria-label="Broker KPIs">
+        <h3>KPIs</h3>
+        <ul>
+          <li>My listings: <strong>—</strong></li>
+          <li>New leads: <strong>—</strong></li>
+          <li>Scheduled viewings: <strong>—</strong></li>
+          <li>Closed deals: <strong>—</strong></li>
+        </ul>
+      </section>
+
+      <section aria-label="Lead inbox">
+        <h3>Lead Inbox</h3>
+        <table border="1" cellpadding="6">
+          <thead>
+            <tr>
+              <th>Lead</th>
+              <th>Listing</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="broker-lead-detail.html?id=22">Lead #22</a></td>
+              <td><a href="listing.html?id=301">Listing #301</a></td>
+              <td>New</td>
+              <td><a href="broker-lead-detail.html?id=22">Open</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-label="Pipeline snapshot">
+        <h3>Pipeline (Snapshot)</h3>
+        <ul>
+          <li>New: —</li>
+          <li>Contacted: —</li>
+          <li>Viewing: —</li>
+          <li>Negotiating: —</li>
+          <li>Closed: —</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+<!-- =========================
+6) owner-dashboard.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Property Owner Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Owner Dashboard</h1>
+    <nav aria-label="Top actions">
+      <a href="owner-properties-new.html">+ Add Property</a> |
+      <a href="notifications.html">🔔</a> |
+      <a href="messages-inbox.html">💬</a> |
+      <a href="profile.html">👤</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <div>
+    <aside>
+      <nav aria-label="Owner navigation">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="owner-dashboard.html">Overview</a></li>
+          <li><a href="owner-properties.html">My Properties</a></li>
+          <li><a href="owner-inquiries.html">Inquiries</a></li>
+          <li><a href="owner-viewings.html">Viewings</a></li>
+          <li><a href="owner-offers.html">Offers (Sales)</a></li>
+          <li><a href="owner-tenancy.html">Tenancy (Rentals)</a></li>
+          <li><a href="owner-payments.html">Payments</a></li>
+          <li><a href="owner-verification.html">Verification</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Overview</h2>
+
+      <section aria-label="Owner KPIs">
+        <h3>KPIs</h3>
+        <ul>
+          <li>Properties listed: <strong>—</strong></li>
+          <li>New inquiries: <strong>—</strong></li>
+          <li>Upcoming viewings: <strong>—</strong></li>
+          <li>Occupancy / Offers: <strong>—</strong></li>
+        </ul>
+      </section>
+
+      <section aria-label="My properties">
+        <h3>My Properties</h3>
+        <ul>
+          <li>
+            Property A —
+            <a href="owner-property-detail.html?id=901">Open</a> |
+            <a href="owner-property-edit.html?id=901">Edit</a> |
+            <a href="#">Publish/Unpublish</a>
+          </li>
+          <li>
+            Property B —
+            <a href="owner-property-detail.html?id=902">Open</a> |
+            <a href="owner-property-edit.html?id=902">Edit</a> |
+            <a href="#">Publish/Unpublish</a>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-label="New inquiries">
+        <h3>New Inquiries</h3>
+        <table border="1" cellpadding="6">
+          <thead>
+            <tr>
+              <th>Inquiry</th>
+              <th>Listing</th>
+              <th>From</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="owner-inquiry-detail.html?id=55">Inquiry #55</a></td>
+              <td><a href="listing.html?id=901">Listing #901</a></td>
+              <td>Customer Name</td>
+              <td><a href="owner-inquiry-detail.html?id=55">Reply</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+<!-- =========================
+7) photographer-dashboard.html
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Photographer Dashboard</title>
+</head>
+<body>
+  <header>
+    <h1>Photographer Dashboard</h1>
+
+    <form action="#" method="post" aria-label="Availability">
+      <fieldset>
+        <legend>Availability</legend>
+        <label>
+          <input type="checkbox" name="available" checked />
+          Available for bookings
+        </label>
+        <button type="submit">Save</button>
+      </fieldset>
+    </form>
+
+    <nav aria-label="Top actions">
+      <a href="notifications.html">🔔</a> |
+      <a href="messages-inbox.html">💬</a> |
+      <a href="profile.html">👤</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <div>
+    <aside>
+      <nav aria-label="Photographer navigation">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="photographer-dashboard.html">Overview</a></li>
+          <li><a href="photographer-jobs-requests.html">Job Requests</a></li>
+          <li><a href="photographer-jobs-confirmed.html">Confirmed Jobs</a></li>
+          <li><a href="photographer-calendar.html">Calendar</a></li>
+          <li><a href="photographer-deliverables.html">Deliverables</a></li>
+          <li><a href="photographer-payments.html">Payments</a></li>
+          <li><a href="photographer-portfolio.html">Portfolio (Optional)</a></li>
+          <li><a href="photographer-verification.html">Verification</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Overview</h2>
+
+      <section aria-label="Today and upcoming">
+        <h3>Today & Upcoming</h3>
+        <ul>
+          <li>Today’s shoots: <strong>—</strong></li>
+          <li>Upcoming shoots: <strong>—</strong></li>
+          <li>Pending edits: <strong>—</strong></li>
+        </ul>
+      </section>
+
+      <section aria-label="Job requests">
+        <h3>Job Requests</h3>
+        <table border="1" cellpadding="6">
+          <thead>
+            <tr>
+              <th>Job</th>
+              <th>Property</th>
+              <th>Date</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="photographer-job-detail.html?id=A1">Job A1</a></td>
+              <td><a href="owner-property-detail.html?id=901">Property #901</a></td>
+              <td>—</td>
+              <td><a href="#">Accept</a> | <a href="#">Decline</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-label="Deliverables queue">
+        <h3>Deliverables Queue</h3>
+        <ul>
+          <li>Job C — <a href="photographer-deliver-job.html?id=C">Upload</a> → Edit → Deliver</li>
+          <li>Job D — <a href="photographer-deliver-job.html?id=D">Deliver</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+
+
+<!-- =========================
+8) listings-management.html (Inner page example)
+Use for Admin/Broker/Owner listings table
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manage Listings</title>
+</head>
+<body>
+  <header>
+    <h1>Manage Listings</h1>
+    <nav>
+      <a href="admin-dashboard.html">Dashboard</a> |
+      <a href="admin-listings.html">Listings</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Listings</h2>
+
+    <form action="#" method="get" aria-label="Listing filters">
+      <fieldset>
+        <legend>Filters</legend>
+
+        <label for="status">Status</label>
+        <select id="status" name="status">
+          <option value="">All</option>
+          <option>Draft</option>
+          <option>Pending</option>
+          <option>Active</option>
+          <option>Rejected</option>
+        </select>
+
+        <label for="type">Type</label>
+        <select id="type" name="type">
+          <option value="">All</option>
+          <option>House</option>
+          <option>Apartment</option>
+          <option>Land</option>
+          <option>Commercial</option>
+        </select>
+
+        <label for="location">Location</label>
+        <input id="location" name="location" type="text" placeholder="e.g., Juba" />
+
+        <label for="priceMin">Min Price</label>
+        <input id="priceMin" name="priceMin" type="number" />
+
+        <label for="priceMax">Max Price</label>
+        <input id="priceMax" name="priceMax" type="number" />
+
+        <button type="submit">Apply</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+
+    <hr />
+
+    <form action="#" method="post" aria-label="Bulk actions">
+      <fieldset>
+        <legend>Listings table</legend>
+
+        <table border="1" cellpadding="6">
+          <thead>
+            <tr>
+              <th>Select</th>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Status</th>
+              <th>Views</th>
+              <th>Leads</th>
+              <th>Updated</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" name="ids" value="12" /></td>
+              <td>12</td>
+              <td><a href="listing.html?id=12">3 Bed House</a></td>
+              <td>Active</td>
+              <td>1200</td>
+              <td>34</td>
+              <td>2026-01-20</td>
+              <td>
+                <a href="listing-edit.html?id=12">Edit</a> |
+                <a href="listing-performance.html?id=12">Performance</a>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="ids" value="13" /></td>
+              <td>13</td>
+              <td><a href="listing.html?id=13">2 Bed Apartment</a></td>
+              <td>Draft</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2026-01-18</td>
+              <td>
+                <a href="listing-edit.html?id=13">Edit</a> |
+                <a href="listing-performance.html?id=13">Performance</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Bulk actions:
+          <button type="submit" name="action" value="publish">Publish</button>
+          <button type="submit" name="action" value="unpublish">Unpublish</button>
+          <button type="submit" name="action" value="feature">Feature</button>
+          <button type="submit" name="action" value="delete">Delete</button>
+        </p>
+      </fieldset>
+    </form>
+  </main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
